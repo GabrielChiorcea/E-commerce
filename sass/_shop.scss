@@ -1,0 +1,211 @@
+
+.banner{
+    
+    grid-column: center-start /7 col-start ;
+    margin: 2rem 0rem; 
+    border-radius: 1rem;
+    background-image: url(../img/shop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    //display: grid; 
+    
+   
+   
+    @media only screen and (max-width: 1000px){  
+        height: 63.5rem;
+        width: 100%;
+        margin: 7rem 0rem 7rem 0rem; 
+        
+
+        } 
+        @media only screen and (max-width: 850px){  
+    
+        grid-column: leftbar-start/rightbar-end ;
+            height: 64rem;
+            //width: 50rem;
+            margin: 7rem 0rem 7rem 0rem; 
+
+        } 
+
+        @media only screen and (max-width: 600px){
+            display: none;
+        }
+    
+    
+}
+
+// this containre contain the shop & facebook
+     .cont{ 
+        grid-column: col-start 7 / center-end ;
+        margin: 2rem;
+        //display: grid;
+  
+       
+
+       @media only screen and (max-width: 1000px){ 
+        margin: 7rem 0rem 7rem 0rem; 
+        //position: relative;
+      
+
+       }
+       @media only screen and (max-width: 850px){
+        
+       grid-column: leftbar-start/rightbar-end;
+       margin: 2rem 0rem 7rem 0rem; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+       }
+
+       @media only screen and (max-width: 600px){
+        //grid-column: full-start /full-end;
+        //background-color: palevioletred;
+        //display: flex;
+        //flex-direction: column;
+        //justify-content: space-between;
+        //align-content: center;
+        height: 55rem;
+        
+    }
+}
+    
+        .shop-card{
+            background-color: #e4d99b ;
+            color: rgb(0, 0, 0);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1rem;
+
+        
+       
+        
+        
+        
+        
+        &__svg{
+            fill: #00000038;
+
+        }
+        &__element{
+            font-size: 76px;
+            margin-bottom: 2rem
+        }
+
+        &__text{
+
+            font-size: 30px;
+        }
+    } 
+    
+    .facebook{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2rem;
+        text-align: center;
+
+        @media only screen and (max-width: 1000px){  
+        
+        &-text__h3{
+            display: none;
+        } 
+        // position: absolute;
+        // flex-direction: row;
+        
+       
+        // width: 70rem;  
+        // bottom: -8rem;
+        // left: -45rem;
+        
+        // border-bottom: solid 1px gray;
+        // padding: 1rem;
+        // border-bottom: none
+    }
+
+        // @media only screen and (max-width: 850px){  
+        //     &-text__h3{
+        //         display: none;
+        //     } 
+        //     position: absolute;
+        //     flex-direction: row;
+        //     justify-content: space-between;
+        //     align-items: center;
+        //     width: 50rem;  
+        //     bottom: -8rem;
+        //     left: -30rem;
+            
+        //     border-bottom: solid 1px gray;
+        //     padding: 1rem;
+        //     border-bottom: none;
+        // }
+  
+        
+        @media only screen and (max-width: 600px){
+            //position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            //bottom: 0rem;
+            //left: 5rem;
+            border: none;
+            width: auto;
+         }
+        
+
+
+        &-text__h2{
+            font-weight: 500;
+        }
+        &-text__h3{
+            margin: 1rem 3rem;
+            font-weight: 500;
+           
+        }
+        &-button{
+            color: var(--color-primary); 
+            border-color: var(--color-primary);
+            display: flex;
+           
+            
+
+            &__svg {
+                 margin-right: 2rem;
+                width: 1.5rem;  
+                height: 1.5rem;
+                margin-top: -0.3rem;
+                fill: var(--color-primary);
+
+        @media only screen and (max-width: 1000px){
+            width: 2rem;  
+                height: 2rem;
+        }
+            }
+        } 
+    }
+
+
+
+.span{
+    border-radius: 100%;
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(251, 251, 251);
+}
+
+.span-dots{
+    width: 7rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-row: 6/6;
+    grid-column: 3/span 4;
+}

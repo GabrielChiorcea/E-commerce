@@ -1,0 +1,22 @@
+@mixin grid-auto-fill{
+    grid-template-columns:  repeat( auto-fit, minmax(25rem, 1fr));
+    grid-template-rows: repeat( auto-fit, minmax(25rem, 1fr)); }
+
+
+@mixin grid-tampled-footer{
+    display: grid;
+    grid-template-columns: [leftbar-start] 8rem [leftbar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end rightbar-start] 8rem [rightbar-end ];
+   
+}
+@mixin grid-tampled-hoverShowList{
+    // display: grid;
+    // grid-template-columns: [leftbar-start] 8rem [leftbar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end rightbar-start] 8rem [rightbar-end ];
+    
+}
+
+
+
+
+
+
+

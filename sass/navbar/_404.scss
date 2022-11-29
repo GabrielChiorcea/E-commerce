@@ -1,0 +1,108 @@
+
+.con{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   // text-align: center;
+    
+}
+
+.page-indentificator{
+    font-size: 1.7rem;
+
+    &_home,
+    &_home:active{
+        cursor: pointer;
+        color: greenyellow;
+        margin-right: 1rem;
+        z-index: -1;
+        text-decoration: none;
+    }
+}
+.err-detalis{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: column;
+   
+   //margin: 4rem ;
+   //border: solid 2px red;
+  //width: max(300px, 800px) ;
+   //height: 50vh;
+    //margin: 12rem;
+    
+
+
+
+    &__Ooops{
+        
+        color: greenyellow;
+       font-size: 30rem;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+@media only screen and (max-width: 600px){  
+font-size: 10rem;
+}
+      
+    
+    }
+}
+.positions{
+    position: relative;
+    
+}
+
+.absolut{
+position: absolute;
+font-size: 60rem;
+z-index: -1;
+ margin-top: -14rem;
+margin-left: -50rem;
+color: rgba(134, 132, 132, 0.129);
+@media only screen and (max-width: 600px){  
+font-size: 20rem;
+margin-left: -16rem;
+margin-top: 3rem;
+
+}
+}
+.err-information{
+    //border: 1px solid black;
+    //margin-left: 5rem;
+
+    padding: 2rem;
+    h2{
+        font-size: 4rem;
+    }
+    h4{
+font-size: 2rem;
+    }
+    p{
+        display: inline-block;
+        font-size: 1.5rem;
+        line-height: 1.5; 
+        
+    
+    }
+    input{
+        width: 20rem;
+        margin-right: 2rem;
+        border-radius: 20rem;
+        border-style: none;
+        border: 1px solid black;
+        padding: 0.5rem;
+        transition: all 2s;
+
+        &:focus{
+            transition: all 2s;
+            width: 25rem;
+        border: 1px solid greenyellow !important;
+        border-style: none;
+        
+
+        }
+    }
+}

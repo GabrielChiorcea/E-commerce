@@ -1,0 +1,81 @@
+.carousel-item.active{
+    display: flex;
+    justify-content: space-around;
+    
+    @media only screen and (max-width: 1800px){
+        gap: 1rem;
+        .container-btn{
+            padding: 1rem;
+            width: 20rem;
+            
+            
+        }
+    }
+    
+    @media only screen and (max-width: 600px){
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-gap: 2rem;
+       //margin-left: -0rem;
+    }
+    @media only screen and (max-width: 540px){
+        display: grid;
+        grid-template-columns: 16rem 16rem;
+        gap: 1rem;
+        margin-left: 0.5rem;
+        .card{
+            width: 16rem!important;
+            height: 25rem !important;
+        }
+        .container-btn{
+            font-size: 2rem;
+        }
+     }
+    
+}
+
+
+
+.card-img-top{
+    
+    object-fit: cover;
+}
+.carousel-item{
+
+display: none;
+
+animation: disp 2s ease-in-out;
+    
+}
+
+@keyframes disp {
+    0%{
+        opacity: 0%;
+    }
+    
+    100%{
+        opacity: 100%;
+    }
+}
+
+.carousel-indicators{
+
+    bottom: -6rem;
+    @media only screen and (max-width: 1400px){
+        bottom: -4rem;
+
+    }
+    @media only screen and (max-width: 1000px){
+    bottom: -7rem;
+
+    }
+}
+
+.card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+    margin: 1rem 0rem;
+    
+}

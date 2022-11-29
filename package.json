@@ -1,0 +1,14 @@
+{
+  "name": "osf-digital",
+  "version": "1.0.0",
+  "description": "",
+  "main": "output.html",
+  "scripts": {
+    "compile:sass": "node-sass sass/output.scss css/style.css -w"
+  },
+  "author": "Chiorcea Gabriel",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OSF</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="main">
+      <form action="" class="form hidden">
+        <h1>Sing In</h1>
+        <button
+          type="button"
+          class="btn-close close"
+          aria-label="Close"
+        ></button>
+        <div class="form__group">
+          <input
+            type="text"
+            class="form__input"
+            placeholder="Full name"
+            id="name"
+            required
+          />
+          <label for="name" class="form__label">Full name</label>
+        </div>
+
+        <div class="form__group">
+          <span class="form__group-p">Forgot your password ?</span>
+          <input
+            type="email"
+            class="form__input"
+            placeholder="Email address"
+            id="email"
+            required
+          />
+          <label for="email" class="form__label">Email address</label>
+        </div>
+        <button class="button" type="submit">Log In</button>
+
+        <p>I dont hahe an accont yet</p>
+      </form>
+
+      <div class="kooky hidden">
+        <h1>We use cookie</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit iure
+          voluptatum, sint nesciunt, natus ullam officiis odio, tempore ab culpa
+          minus eius unde cupiditate similique aliquid et in quas aperiam.
+        </p>
+        <button class="cooky-close button">Accept</button>
+      </div>
+      <div class="overlay hidden"></div>
+
+      <nav class="nav">
+        <a href="output.html" class="nav__logo"> <p>CG</p> </a>
+        <!-- <img class="nav__logo-img" src="img/logo.png" alt="logo" /> -->
+
+        <div class="nav__list">
+          <ul class="nav__list-items">
+            <li class="nav__list-item services">
+              SERVICES
+
+              <svg class="nav__list-svg circle">
+                <use href="img/icons.svg#icon-circle-down"></use>
+              </svg>
+            </li>
+
+            <li class="nav__list-item">COMPANY</li>
+            <li class="nav__list-item">LIBRARY</li>
+            <li class="nav__list-item">CONTACT US</li>
+
+            <li class="nav__list-item nav__list-grey">EN</li>
+
+            <li class="nav__list-item nav__list-grey">$US</li>
+          </ul>
+        </div>
+
+        <div class="nav__svg">
+          <svg class="nav__svg-icon users">
+            <use href="img/icons.svg#icon-users"></use>
+          </svg>
+
+          <div class="nav__svg-icon">
+            <span class="heart">0</span>
+            <a href="favorite.html"
+              ><svg class="nav__svg-icon h">
+                <use href="img/icons.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="nav__svg-icon cart">
+            <svg class="nav__svg-icon">
+              <use href="img/icons.svg#icon-cart"></use>
+            </svg>
+          </div>
+
+          <div class="ham">
+            <span class="open-one ham-1 ham-line"></span>
+            <span class="open-tow ham-2 ham-line"></span>
+            <span class="open-three ham-3 ham-line"></span>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hover-show hidden">
+        <h2 class="hover-show__title title-1">Categoriest</h2>
+        <h2 class="hover-show__title title-2">Sales</h2>
+        <div class="hover-show__1">
+          <ul class="list">
+            <li>Alcohol</li>
+            <li>Art</li>
+            <li>Books</li>
+            <li>Drink</li>
+            <li>Electronics</li>
+          </ul>
+        </div>
+
+        <div class="hover-show__2">
+          <ul class="list">
+            <li>Home</li>
+            <li>Jewelry</li>
+            <li>Kids</li>
+            <li>Mens</li>
+            <li>Woman</li>
+            <li>Mobile</li>
+            <li>Music</li>
+          </ul>
+        </div>
+
+        <div class="hover-show__3">
+          <ul class="list">
+            <li>Alcohol</li>
+            <li>Art</li>
+            <li>Books</li>
+            <li>Drink</li>
+          </ul>
+        </div>
+
+        <div class="hover-show__4">
+          <ul class="list">
+            <li>About us</li>
+            <li>Delivery</li>
+            <li>Testimonials</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
+        <img class="hover-show__img" src="img/shop.jpg" alt="" />
+      </div>
+
+      <!-- main contebt of cart.html -->
+
+      <div class="products">
+        <h1 class="products-title">Your wish list is empty</h1>
+        <svg class="products-svg">
+          <use href="img/icons.svg#icon-heart"></use>
+        </svg>
+        <!-- <div class="product">
+      <img src="./img/home.png" alt="">
+      <p>Lorem, ipsum esse nostrum quidem minima recusandae error.</p>
+      <div class = product-svg>
+      <svg class="product-svg">
+        <use href="img/icons.svg#icon-heart"></use>
+      </svg>
+    </div>
+      <button class="container-btn button product-button">BUY</button>
+    </div> -->
+      </div>
+
+      <div class="grid-elements fetc hidden">
+        <div class="grid-element">
+          <img class="grid-element__img" src="img/shop.jpg" alt="" />
+          <div class="grid-element__container">
+            <p>Popular item,buy now</p>
+            <button class="container-btn button" type="button">BUY</button>
+          </div>
+        </div>
+        <div class="grid-element">
+          <img class="grid-element__img" src="img/shop.jpg" alt="" />
+          <div class="grid-element__container">
+            <p>Popular item,buy now</p>
+            <button class="container-btn button" type="button">BUY</button>
+          </div>
+        </div>
+        <div class="grid-element">
+          <img class="grid-element__img" src="img/shop.jpg" alt="" />
+          <div class="grid-element__container">
+            <p>Popular item,buy now</p>
+            <button class="container-btn button" type="button">BUY</button>
+          </div>
+        </div>
+        <div class="grid-element">
+          <img class="grid-element__img" src="img/shop.jpg" alt="" />
+          <div class="grid-element__container">
+            <p>Popular item,buy now</p>
+            <button class="container-btn button" type="button">BUY</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <section class="footer-container">
+        <!-- <div class="categoriest "> -->
+        <div class="copyright">
+          <div class="copyright-element rights">
+            <span>Copyright 2022</span>
+            <span>All Right Reserved</span>
+          </div>
+
+          <div class="copyright-element contact">
+            <span>CONTACT</span>
+            <span>Timisoara, Timis, Romaina</span>
+          </div>
+
+          <div class="copyright-element digital-contact">
+            <a href="mailto:gabrielchiorcea93@gmail.com">Email me!</a>
+            <span>0771497457</span>
+          </div>
+        </div>
+        <div class="footer">
+          <h2 class="footer-title__1">Categoriest</h2>
+          <h2 class="footer-title__2">About</h2>
+
+          <div class="footer-list__1">
+            <ul class="footer-list">
+              <li>Alcohol</li>
+              <li>Art</li>
+              <li>Books</li>
+              <li>Drink</li>
+              <li>Electronics</li>
+            </ul>
+          </div>
+
+          <div class="footer-list__2">
+            <ul class="footer-list">
+              <li>Home</li>
+              <li>Jewelry</li>
+              <li>Kids</li>
+              <li>Mens</li>
+              <li>Woman</li>
+              <li>Mobile</li>
+              <li>Music</li>
+            </ul>
+          </div>
+
+          <div class="footer-list__3">
+            <ul class="footer-list">
+              <li>Alcohol</li>
+              <li>Art</li>
+              <li>Books</li>
+              <li>Drink</li>
+            </ul>
+          </div>
+
+          <div class="footer-list__4">
+            <ul class="footer-list">
+              <li>About us</li>
+              <li>Delivery</li>
+              <li>Testimonials</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- <script type="module" src="./javascript/control.js"></script> -->
+      <script type="module" src="./javascript/favorite.js"></script>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"
+      ></script>
+    </section>
+  </body>
+</html>

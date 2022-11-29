@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+ 
+ :root {
+    --color-primary: hsl(201, 89%, 61%) ;
+    --count: 0;
+//     --color-primary-light: ;
+//     --color-primary-dark: ;
+
+   --color-grey-light-1: #ffffff;
+//     --color-grey-light-2: #f4f2f2;
+//     --color-grey-light-3: #f0eeee;
+//     --color-grey-light-4: ;
+    
+//     --color-grey-dark-1:;
+   --color-grey-dark-3: rgb(228, 214, 214);
+
+//     --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+//     --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+
+//     --line: 1px solid var(--color-grey-light-2);
+// RESPONSIVE BREAKPOINTS
+$desktop: 90em;   // 1800px
+$tab-land: 75em;   // 1200px
+$tab-port: 50em;    // 800px;
+$phone: 37.5em;    // 600px;
+
+}
+
+// $bp-largest: 75em;     // 1200px
+// $bp-large: 68.75em;    // 1100px
+// $bp-medium: 56.25em;   // 900px
+// $bp-small: 37.5em;     // 600px
+// $bp-smallest: 31.25em; // 500px
+
+// RESPONSIVE BREAKPOINTS
+$desktop: 90em;   // 1800px
+$tab-land: 75em;   // 1200px
+$tab-port: 50em;    // 800px;
+$phone: 37.5em;    // 600px;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    
+    box-sizing: border-box;
+     
+
+     @media only screen and (max-width: 1000px){  
+        font-size: 40%;
+     }
+
+     font-size: 62.5% ; // 1rem = 10px, 10px/16px = 62.5%
+     
+     @media only screen and (max-width: 600px){ 
+        font-size: 62.5% ; // 1rem = 10px, 10px/16px = 62.5%
+
+     }
+        
+   
+
+
+
+   
+}
+ 
+body {
+    //font-family: 'Montserrat', sans-serif;
+    // background-color: var(--color-grey-light-1);
+  
+
+}
+
+
+
+.main{
+    
+    display: grid;
+    // grid-template-rows: 70vh min-content 40vw repeat(5, min-content);
+    grid-template-rows:   repeat( auto-fit, minmax(25rem, 1fr));
+
+    grid-template-columns: [leftbar-start] 8rem [leftbar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end rightbar-start] 8rem [rightbar-end ];
+    margin-top: 8rem;
+    position: relative;
+}
+
+
+h1{
+    font-family: "Roboto";
+}
+
+p{
+    font-family: "Roboto" 300;
+    
+}
